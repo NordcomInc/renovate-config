@@ -30,5 +30,6 @@
     "allowCustomCrateRegistries": true,
     "allowScripts": true,
     "exposeAllEnv": true,
-    "onboardingPrTitle": "Welcome, Configure Renovate"
+    "onboardingPrTitle": "Configure Renovate",
+    "onboardingNoDeps": true
 }
