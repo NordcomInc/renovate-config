@@ -3,7 +3,8 @@
         "config:base",
         ":labels(Dependency)",
         ":rebaseStalePrs",
-        ":disableRateLimiting"
+        ":disableRateLimiting",
+        ":semanticCommitsDisabled"
     ],
     "gradle": {
         "enabled": true
