@@ -29,5 +29,6 @@
     "automerge": true,
     "allowCustomCrateRegistries": true,
     "allowScripts": true,
-    "exposeAllEnv": true
+    "exposeAllEnv": true,
+    "onboardingPrTitle": "Welcome, Configure Renovate"
 }
