@@ -1,0 +1,30 @@
+{
+    "extends": [
+        "config:base",
+        ":labels(depedendencies,devops)",
+        ":rebaseStalePrs",
+        ":disableRateLimiting"
+    ],
+    "gradle": {
+        "enabled": true
+    },
+    "gradle-wrapper": {
+        "enabled": true
+    },
+    "maven": {
+        "enabled": true
+    },
+    "python": {
+        "enabled": true
+    },
+    "bundler": {
+        "enabled": true
+    },
+    "travis": {
+        "enabled": false
+    },
+    "automerge": true,
+    "allowCustomCrateRegistries": true,
+    "allowScripts": true,
+    "exposeAllEnv": true
+}
