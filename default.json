@@ -1,7 +1,7 @@
 {
     "extends": [
         "config:base",
-        ":labels(depedendencies,devops)",
+        ":labels(Dependency)",
         ":rebaseStalePrs",
         ":disableRateLimiting"
     ],
