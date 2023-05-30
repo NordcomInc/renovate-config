@@ -4,7 +4,9 @@
         ":labels(Dependency)",
         ":rebaseStalePrs",
         ":disableRateLimiting",
-        ":semanticCommitsDisabled"
+        ":semanticCommitsDisabled",
+        ":disableDependencyDashboard",
+        ":automergeMajor"
     ],
     "gradle": {
         "enabled": true
