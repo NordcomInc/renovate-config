@@ -1,0 +1,43 @@
+{
+    "homepage": "https://github.com/sweet-side-of-sweden/renovate-config#readme",
+    "license": "MIT",
+    "main": "package.json",
+    "name": "@sweet-side-of-sweden/renovate-config",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sweet-side-of-sweden/renovate-config.git"
+    },
+    "version": "1.0.0",
+    "renovate-config": {
+        "default": {
+            "extends": [
+                "config:base",
+                ":labels(depedendencies,devops)",
+                ":rebaseStalePrs",
+                ":disableRateLimiting"
+            ],
+            "gradle": {
+                "enabled": true
+            },
+            "gradle-wrapper": {
+                "enabled": true
+            },
+            "maven": {
+                "enabled": true
+            },
+            "python": {
+                "enabled": true
+            },
+            "bundler": {
+                "enabled": true
+            },
+            "travis": {
+                "enabled": false
+            },
+            "automerge": true,
+            "allowCustomCrateRegistries": true,
+            "allowScripts": true,
+            "exposeAllEnv": true
+        }
+    }
+}
