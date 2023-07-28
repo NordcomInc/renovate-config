@@ -6,7 +6,7 @@
         ":disableRateLimiting",
         ":semanticCommitsDisabled",
         ":disableDependencyDashboard",
-        ":automergeMajor"
+        ":automergeMinor"
     ],
     "gradle": {
         "enabled": true
@@ -31,5 +31,8 @@
     "allowScripts": true,
     "exposeAllEnv": true,
     "onboardingPrTitle": "Configure Renovate",
-    "onboardingNoDeps": true
+    "onboardingNoDeps": true,
+    "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
+    "commitMessagePrefix": "Deps: ",
+    "commitMessageSuffix": "."
 }
