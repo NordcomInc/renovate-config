@@ -1,4 +1,5 @@
 {
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:base",
         ":labels(Dependency)",
@@ -27,16 +28,18 @@
         "enabled": false
     },
     "automerge": true,
+    "branchPrefix": "deps/bot-",
     "allowCustomCrateRegistries": true,
     "allowScripts": true,
     "exposeAllEnv": true,
     "onboardingPrTitle": "Configure Renovate",
-    "onboardingNoDeps": true,
+    "onboarding": false,
     "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
     "commitMessagePrefix": "Deps: ",
     "commitMessageSuffix": ".",
     "prConcurrentLimit": 4,
     "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{controls}}}{{{footer}}}",
     "prFooter": "This PR has been generated on behalf of [Nordcom Group Inc.](https://nordcom.io/) by [Renovate Bot](https://github.com/renovatebot/renovate).",
-    "gitAuthor": "NordcomBot <opensource@nordcom.io>"
+    "gitAuthor": "NordcomBot <opensource@nordcom.io>",
+    "fetchReleaseNotes": false
 }
