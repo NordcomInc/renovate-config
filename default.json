@@ -33,8 +33,10 @@
     "onboardingPrTitle": "Configure Renovate",
     "onboardingNoDeps": true,
     "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
-    "commitMessagePrefix": "Dependencies: ",
+    "commitMessagePrefix": "Deps: ",
     "commitMessageSuffix": ".",
-    "prConcurrentLimit": 2,
-    "prFooter": "This PR has been generated on behalf of [Nordcom Group Inc.](https://nordcom.io/) by [Renovate Bot](https://github.com/renovatebot/renovate)."
+    "prConcurrentLimit": 4,
+    "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{controls}}}{{{footer}}}",
+    "prFooter": "This PR has been generated on behalf of [Nordcom Group Inc.](https://nordcom.io/) by [Renovate Bot](https://github.com/renovatebot/renovate).",
+    "gitAuthor": "NordcomBot <opensource@nordcom.io>"
 }
