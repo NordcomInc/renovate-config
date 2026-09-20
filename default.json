@@ -34,7 +34,7 @@
     "onboardingPrTitle": "Configure automatic dependency management",
     "onboarding": false,
     "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
-    "commitMessagePrefix": "Deps: ",
+    "commitMessagePrefix": "deps: ",
     "commitMessageSuffix": ".",
     "prConcurrentLimit": 100,
     "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{controls}}}{{{footer}}}",
