@@ -38,6 +38,5 @@
     "commitMessageSuffix": ".",
     "prConcurrentLimit": 100,
     "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{controls}}}{{{footer}}}",
-    "prFooter": "This PR has been generated on behalf of [Nordcom AB](https://nordcom.io/?utm_source=github&utm_medium=pull-request&utm_campaign=renovate) by [Renovate Bot](https://github.com/renovatebot/renovate).",
     "fetchReleaseNotes": false
 }
