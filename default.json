@@ -35,7 +35,7 @@
     "onboarding": false,
     "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
     "commitMessagePrefix": "deps: ",
-    "commitMessageSuffix": ".",
+    "commitMessageSuffix": "",
     "prConcurrentLimit": 100,
     "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{controls}}}{{{footer}}}",
     "fetchReleaseNotes": false
