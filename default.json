@@ -1,12 +1,12 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-        "config:base",
+        "config:recommended",
         ":labels(Dependency)",
         ":rebaseStalePrs",
         ":disableRateLimiting",
         ":semanticCommitsDisabled",
-        ":automergeMinor"
+        ":automergeMajor"
     ],
     "gradle": {
         "enabled": true
@@ -26,7 +26,6 @@
     "travis": {
         "enabled": false
     },
-    "automerge": true,
     "branchPrefix": "deps/bot-",
     "allowCustomCrateRegistries": true,
     "allowScripts": true,
@@ -36,7 +35,10 @@
     "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
     "commitMessagePrefix": "chore(deps): ",
     "commitMessageSuffix": "",
-    "prConcurrentLimit": 100,
-    "prBodyTemplate": "{{{table}}}{{{warnings}}}{{{notes}}}{{{controls}}}{{{footer}}}",
+    "commitMessageAction": "update",
+    "gitIgnoredAuthors": ["*"],
+    "prConcurrentLimit": 3,
+    "prHeader": "> [!WARNING]\n> Renovate manages this PR automatically. Manual changes to this branch may be overwritten. The PR and branch may be deleted when the update is no longer needed.",
+    "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{controls}}}{{{footer}}}",
     "fetchReleaseNotes": true
 }
