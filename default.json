@@ -2,11 +2,16 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
         "config:recommended",
+        ":configMigration",
         ":labels(Dependency)",
         ":rebaseStalePrs",
         ":disableRateLimiting",
-        ":semanticCommitsDisabled",
-        ":automergeMajor"
+        ":semanticCommits",
+        ":semanticCommitTypeAll(chore)",
+        ":automergeAll",
+        ":maintainLockFilesWeekly",
+        "helpers:pinGitHubActionDigests",
+        "docker:pinDigests"
     ],
     "gradle": {
         "enabled": true
@@ -32,10 +37,6 @@
     "exposeAllEnv": true,
     "onboardingPrTitle": "Configure automatic dependency management",
     "onboarding": false,
-    "commitMessage": "{{{commitMessagePrefix}}}{{{commitMessageAction}}} {{{commitMessageTopic}}} {{{commitMessageExtra}}}{{{commitMessageSuffix}}}",
-    "commitMessagePrefix": "chore(deps): ",
-    "commitMessageSuffix": "",
-    "commitMessageAction": "update",
     "gitIgnoredAuthors": ["*"],
     "prConcurrentLimit": 3,
     "prHeader": "> [!WARNING]\n> Renovate manages this PR automatically. Manual changes to this branch may be overwritten. The PR and branch may be deleted when the update is no longer needed.",
