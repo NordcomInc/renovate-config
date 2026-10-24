@@ -36,10 +36,11 @@
     "allowScripts": true,
     "exposeAllEnv": true,
     "onboardingPrTitle": "Configure automatic dependency management",
-    "onboarding": false,
+    "onboarding": true,
     "gitIgnoredAuthors": ["*"],
     "prConcurrentLimit": 3,
     "prHeader": "> [!WARNING]\n> Renovate manages this PR automatically. Manual changes to this branch may be overwritten. The PR and branch may be deleted when the update is no longer needed.",
+    "prFooter": "✨ Brought to you by [Filiph Sandström](https://github.com/filiphsps) · dependency updates powered by [Renovate](https://github.com/renovatebot/renovate).",
     "prBodyTemplate": "{{{header}}}{{{table}}}{{{warnings}}}{{{notes}}}{{{changelogs}}}{{{configDescription}}}{{{controls}}}{{{footer}}}",
     "fetchReleaseNotes": true
 }
